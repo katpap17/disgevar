@@ -8,6 +8,11 @@ const {Op} = require('sequelize');
 
 //INSERT INTO Variant VALUES(?????)
 express.post('/',  (req, res) => {
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            req.body[i]=null;
+        }
+    }
     Variant.create({
         Gene: req.body.Gene,
         SNPIdentifier: req.body.SNPIdentifier,
@@ -108,6 +113,11 @@ express.post('/del', (req, res) =>{
 
 //UPDATE AN ENTRY
 express.post('/upd', (req, res) =>{
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            delete req.body[i];
+        }
+    }
     Variant.update(req.body, {where: {SNPIdentifier: req.body.SNPIdentifier}}).then(num => {
         if (num == 1) {
             res.render('admin-panel', {
