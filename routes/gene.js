@@ -9,7 +9,11 @@ const {Op} = require('sequelize');
 
 //INSERT INTO Gene VALUES(?????)
 express.post('/', (req, res) => {
-    console.log(req.body);
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            req.body[i]=null;
+        }
+    }
     Gene.create({
         GeneSymbol: req.body.GeneSymbol,
         FullName: req.body.FullName,
@@ -71,7 +75,7 @@ express.get('/search/:GeneSymbol?', (req, res) => {
 express.post('/del', (req, res) =>{
     Gene.destroy({where:{GeneSymbol: req.body.GeneSymbol}}) .then(num => {
         if (num == 1) {
-            res.render({
+            res.render('admin-panel', {
                 message: "Gene was deleted successfully!"
             });
         } else {
@@ -91,6 +95,11 @@ express.post('/del', (req, res) =>{
 
 //UPDATE AN ENTRY
 express.post('/upd',  (req, res) =>{
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            delete req.body[i];
+        }
+    }
     Gene.update(req.body, {where: {GeneSymbol: req.body.GeneSymbol}}).then(num => {
         if (num == 1) {
             res.render('admin-panel', {

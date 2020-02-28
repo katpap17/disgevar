@@ -72,7 +72,7 @@ input[type=text], label {
   float:right;
 }
 .nav a:hover {
-  color: black;
+  color: #08d9d6;
 }
 
 
@@ -362,6 +362,18 @@ th{
 .displayOne{
   font-size: 20px;
 }
+
+.displayOne{
+  margin-left: 40%;
+  text-align: center;
+  width: 20%;
+  margin-top: 0;
+}
+
+.displayOne th{
+  width: 5%;
+}
+
 .results{
   position: absolute;
   margin-top: 100px;

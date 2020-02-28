@@ -9,6 +9,12 @@
     //INSERT INTO DISEASE VALUES(?????)
     express.post('/', (req, res) => {
      const dis=0;
+        for(let i in req.body){
+            if(req.body[i] === ''){
+                req.body[i]=null;
+            }
+        }
+     console.log(req.body);
      Disease.create({
          DName: req.body.DName,
          UMLSCUI: req.body.UMLSCUI,
@@ -88,6 +94,11 @@ express.post('/del',  (req, res) => {
 
 //UPDATE AN ENTRY
 express.post('/upd', (req, res) => {
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            delete req.body[i];
+        }
+    }
     Disease.update(req.body, {where: {UMLSCUI: req.body.UMLSCUI}}).then(num => {
         if (num == 1) {
             res.render('admin-panel', {

@@ -8,22 +8,31 @@ html
         include layout
         p.nf
         h1.oneTitle Disease
-        p.displayOne.
-            UMLSCUI: #{result.UMLSCUI}
-            #[br]
-            Disease Name: #{result.DName}
-            #[br]
-            MeSH: #{result.MeSH}
-            #[br]
-            SemanticType: #{result.SemanticType}
-            #[br]
-            PhenAbn: #{result.PhenAbn}
-            #[br]
-            DType: #{result.DType}
-            #[br]
-            NGenes: #{result.NGenes}
-            #[br]
-            NSnps: #{result.NSnps}
+        table.displayOne
+            tr
+                td UMLSCUI:
+                td #{result.UMLSCUI}
+            tr
+                td Disease Name:
+                td #{result.DName}
+            tr
+                td MeSH:
+                td #{result.MeSH}
+            tr
+                td SemanticType:
+                td #{result.SemanticType}
+            tr
+                td PhenAbn:
+                td #{result.PhenAbn}
+            tr
+                td DType:
+                td #{result.DType}
+            tr
+                td NGenes:
+                td #{result.NGenes}
+            tr
+                td NSnps:
+                td #{result.NSnps}
         div.buttons
             a(href="/genedisassoc/"+result.UMLSCUI class="btn-1") View Gene-Disease Associations For This Disease
             br

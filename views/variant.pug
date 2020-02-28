@@ -7,29 +7,41 @@ html
     body
         include layout
         p.nf
-        h1.oneTitle
-        p.displayOne.
-            Gene: #[a(href="/genes/"+result.Gene) #{result.Gene}]
-            #[br]
-            SNPIdentifier: #{result.SNPIdentifier}
-            #[br]
-            Class: #{result.Class}
-            #[br]
-            Chromosome: #{result.Chromosome}
-            #[br]
-            VPosition: #{result.VPosition}
-            #[br]
-            Consequence: #{result.Consequence}
-            #[br]
-            Alleles: #{result.Alleles}
-            #[br]
-            AFexome: #{result.AFexome}
-            #[br]
-            AFgenome: #{result.AFgenome}
-            #[br]
-            DPI: #{result.DPI}
-            #[br]
-            DSI: #{result.DSI}
+        h1.oneTitle Variant
+        table.displayOne
+            tr
+                td Gene:
+                td #[a(href="/genes/"+result.Gene) #{result.Gene}]
+            tr
+                td SNPIdentifier:
+                td #{result.SNPIdentifier}
+            tr
+                td Class:
+                td #{result.Class}
+            tr
+                td Chromosome:
+                td #{result.Chromosome}
+            tr
+                td VPosition:
+                td #{result.VPosition}
+            tr
+                td Consequence:
+                td #{result.Consequence}
+            tr
+                td Alleles:
+                td #{result.Alleles}
+            tr
+                td AFexome:
+                td #{result.AFexome}
+            tr
+                td AFgenome:
+                td #{result.AFgenome}
+            tr
+                td DPI:
+                td #{result.DPI}
+            tr
+                td DSI:
+                td #{result.DSI}
         div.buttons
             a(href="/vardisassoc/a/"+result.SNPIdentifier class="btn-1") View Variant-Disease Associations for this Variant
         div.footer

@@ -18,7 +18,7 @@ module.exports = function(passport, user) {
         function(req, username, password, done) {
             var User = user;
             var isValidPassword = function (encryptedPassword, password) {
-                if (password == encryptedPassword) {
+                if (bCrypt.compare(password, encryptedPassword)) {
                     return true;
                 }
             };

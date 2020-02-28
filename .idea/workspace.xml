@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cab17938-0903-43a6-8d2d-9ed2f031fb6b" name="Default Changelist" comment="" />
+    <list default="true" id="cab17938-0903-43a6-8d2d-9ed2f031fb6b" name="Default Changelist" comment="!">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/disease.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/disease.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/gene.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/gene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/genedisassoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/genedisassoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/vardisassoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/vardisassoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/variant.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/variant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/disease.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/disease.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/gene.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/gene.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/variant.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/variant.pug" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +31,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="ProjectId" id="1XR2SbzIdDH4qrXpTk12bvo2K4A" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
@@ -100,11 +118,16 @@
       <workItem from="1582712851414" duration="15300000" />
       <workItem from="1582736912237" duration="15388000" />
       <workItem from="1582792919113" duration="36916000" />
+      <workItem from="1582893584391" duration="5765000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="!" />
+    <option name="LAST_COMMIT_MESSAGE" value="!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1219" y="353" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581183549940">
@@ -115,26 +138,38 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="697" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1582650298160" />
+    <state x="555" y="67" width="802" height="979" key="CommitChangelistDialog2" timestamp="1582899639617">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="555" y="67" width="802" height="979" key="CommitChangelistDialog2/0.40.1920.1040@0.40.1920.1040" timestamp="1582899639617" />
+    <state width="359" height="606" key="Diff.GoToChangePopup" timestamp="1582899492236">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="359" height="606" key="Diff.GoToChangePopup/0.40.1920.1040@0.40.1920.1040" timestamp="1582899492236" />
+    <state x="187" y="127" key="DiffContextDialog" timestamp="1582899492731">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="187" y="127" key="DiffContextDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1582899492731" />
     <state x="878" y="341" key="EditFileWatcherDialog" timestamp="1580994997441">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="878" y="341" key="EditFileWatcherDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580994997441" />
-    <state width="1897" height="171" key="GridCell.Tab.0.bottom" timestamp="1582893140593">
+    <state width="1897" height="171" key="GridCell.Tab.0.bottom" timestamp="1582899505291">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1897" height="171" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140593" />
-    <state width="1897" height="171" key="GridCell.Tab.0.center" timestamp="1582893140592">
+    <state width="1897" height="171" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582899505291" />
+    <state width="1897" height="171" key="GridCell.Tab.0.center" timestamp="1582899505290">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1897" height="171" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140592" />
-    <state width="1897" height="171" key="GridCell.Tab.0.left" timestamp="1582893140592">
+    <state width="1897" height="171" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582899505290" />
+    <state width="1897" height="171" key="GridCell.Tab.0.left" timestamp="1582899505289">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1897" height="171" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140592" />
-    <state width="1897" height="171" key="GridCell.Tab.0.right" timestamp="1582893140593">
+    <state width="1897" height="171" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582899505289" />
+    <state width="1897" height="171" key="GridCell.Tab.0.right" timestamp="1582899505291">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1897" height="171" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140593" />
+    <state width="1897" height="171" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582899505291" />
     <state width="1897" height="313" key="GridCell.Tab.1.bottom" timestamp="1582893140462">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -187,20 +222,13 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="1169" y="179" width="664" height="652" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1582625962586" />
+    <state x="752" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582899377119">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="752" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040@0.40.1920.1040" timestamp="1582899377119" />
     <state x="1175" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1582651296706">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="1175" y="269" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1582651296706" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/variant.js</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

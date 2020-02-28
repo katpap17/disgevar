@@ -8,23 +8,32 @@ html
         include layout
         p.nf
         h1.oneTitle Gene
-        p.displayOne.
-            GeneSymbol: #{result.GeneSymbol}
-            #[br]
-            FullName: #{result.FullName}
-            #[br]
-            EntrezIdentifier: #{result.EntrezIdentifier}
-            #[br]
-            UniprotAccession: #{result.UniprotAccession}
-            #[br]
-            DPI: #{result.DPI}
-            #[br]
-            DSI: #{result.DSI}
-            #[br]
-            pLI: #{result.pLI}
-            #[br]
-            NDiseases: #{result.NDiseases}
-            #[br]
+        table.displayOne
+            tr
+                td GeneSymbol:
+                td #{result.GeneSymbol}
+            tr
+                td FullName:
+                td #{result.FullName}
+            tr
+                td EntrezIdentifier:
+                td #{result.EntrezIdentifier}
+            tr
+                td UniprotAccession:
+                td #{result.UniprotAccession}
+            tr
+                td DPI:
+                td #{result.DPI}
+            tr
+                td DSI:
+                td #{result.DSI}
+            tr
+            td pLI:
+            td #{result.pLI}
+            tr
+                td NDiseases:
+                td #{result.NDiseases}
+            br
         div.buttons
             a(href="/variants/a/"+result.GeneSymbol class="btn-1") View Variants for this Gene
             a(href="/genedisassoc/a/"+result.GeneSymbol class="btn-1") View Gene-Disease Associations for this Gene
