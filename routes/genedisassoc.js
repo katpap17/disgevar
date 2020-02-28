@@ -8,6 +8,11 @@ const {Op} = require('sequelize');
 
 //INSERT INTO GeneDisAssoc VALUES(?????)
 express.post('/',  (req, res) => {
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            req.body[i]=null;
+        }
+    }
     GeneDisAssoc.create({
         Disease: req.body.Disease,
         Gene: req.body.Gene,
@@ -78,6 +83,11 @@ express.post('/del', (req, res) => {
 
 //UPDATE AN ENTRY
 express.post('/upd', (req, res) => {
+    for(let i in req.body){
+        if(req.body[i] === ''){
+            delete req.body[i];
+        }
+    }
     GeneDisAssoc.update(req.body, {where: {
             [Op.and]: [
                 {Disease: req.body.Disease},
