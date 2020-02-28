@@ -1,0 +1,31 @@
+html
+    head
+        title = "Variant - Disease Associations"
+        link(rel="stylesheet" href ="/stylesheets/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        h1.nf Variant-Disease Associations
+        table.table
+            tr
+                th Variant
+                th Disease
+                th NPMIDs
+                th Score
+                th EI
+                th First Reference
+                th Last Reference
+            t.body
+                for item in result
+                    tr
+                        td #[a(href="/variants/"+item.Variant) #{item.Variant}]
+                        td #[a(href="/diseases/"+item.Disease) #{item.Disease}]
+                        td #{item.NPMIDs}
+                        td #{item.Score}
+                        td #{item.EI}
+                        td #{item.FirstRef}
+                        td #{item.LastRef}
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska
+                

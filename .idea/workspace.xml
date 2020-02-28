@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cab17938-0903-43a6-8d2d-9ed2f031fb6b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Jade File" />
+        <option value="tsconfig.json" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XR2SbzIdDH4qrXpTk12bvo2K4A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="/usr/lib/node_modules/npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/stylesheets" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/routes" />
+      <recent name="$PROJECT_DIR$/DAO" />
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="Disease.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/models/Disease.js" working-dir="$PROJECT_DIR$/models">
+      <method v="2" />
+    </configuration>
+    <configuration name="Gene.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/models/Gene.js" working-dir="$PROJECT_DIR$/models">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="disease.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/disease.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="gene.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/gene.js" working-dir="$PROJECT_DIR$/roots">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.disease.js" />
+        <item itemvalue="Node.js.Gene.js" />
+        <item itemvalue="Node.js.Disease.js" />
+        <item itemvalue="Node.js.gene.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cab17938-0903-43a6-8d2d-9ed2f031fb6b" name="Default Changelist" comment="" />
+      <created>1580994586930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580994586930</updated>
+      <workItem from="1580994599473" duration="25007000" />
+      <workItem from="1581069235711" duration="23448000" />
+      <workItem from="1581157687128" duration="61136000" />
+      <workItem from="1581330624996" duration="22910000" />
+      <workItem from="1581420222548" duration="5639000" />
+      <workItem from="1581431441696" duration="9633000" />
+      <workItem from="1581676084742" duration="9407000" />
+      <workItem from="1582382138981" duration="792000" />
+      <workItem from="1582624722528" duration="32131000" />
+      <workItem from="1582712851414" duration="15300000" />
+      <workItem from="1582736912237" duration="15388000" />
+      <workItem from="1582792919113" duration="36916000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1219" y="353" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581183549940">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="1219" y="353" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1581183549940" />
+    <state x="697" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582650298160">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="697" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1582650298160" />
+    <state x="878" y="341" key="EditFileWatcherDialog" timestamp="1580994997441">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="878" y="341" key="EditFileWatcherDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580994997441" />
+    <state width="1897" height="171" key="GridCell.Tab.0.bottom" timestamp="1582893140593">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="171" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140593" />
+    <state width="1897" height="171" key="GridCell.Tab.0.center" timestamp="1582893140592">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="171" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140592" />
+    <state width="1897" height="171" key="GridCell.Tab.0.left" timestamp="1582893140592">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="171" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140592" />
+    <state width="1897" height="171" key="GridCell.Tab.0.right" timestamp="1582893140593">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="171" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140593" />
+    <state width="1897" height="313" key="GridCell.Tab.1.bottom" timestamp="1582893140462">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140462" />
+    <state width="1897" height="313" key="GridCell.Tab.1.center" timestamp="1582893140461">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140461" />
+    <state width="1897" height="313" key="GridCell.Tab.1.left" timestamp="1582893140461">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140461" />
+    <state width="1897" height="313" key="GridCell.Tab.1.right" timestamp="1582893140461">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140461" />
+    <state width="1897" height="313" key="GridCell.Tab.2.bottom" timestamp="1582893140462">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140462" />
+    <state width="1897" height="313" key="GridCell.Tab.2.center" timestamp="1582893140462">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140462" />
+    <state width="1897" height="313" key="GridCell.Tab.2.left" timestamp="1582893140462">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140462" />
+    <state width="1897" height="313" key="GridCell.Tab.2.right" timestamp="1582893140462">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140462" />
+    <state width="1897" height="313" key="GridCell.Tab.3.bottom" timestamp="1582893140463">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140463" />
+    <state width="1897" height="313" key="GridCell.Tab.3.center" timestamp="1582893140463">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140463" />
+    <state width="1897" height="313" key="GridCell.Tab.3.left" timestamp="1582893140463">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140463" />
+    <state width="1897" height="313" key="GridCell.Tab.3.right" timestamp="1582893140463">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="313" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1582893140463" />
+    <state x="1169" y="179" width="664" height="652" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582625962586">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="1169" y="179" width="664" height="652" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1582625962586" />
+    <state x="1175" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1582651296706">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="1175" y="269" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1582651296706" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/variant.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

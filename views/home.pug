@@ -1,0 +1,62 @@
+
+html
+  head
+    title = "DisGeVar - Home"
+    script(src='/javascripts/jquery.js')
+    link(rel="stylesheet" href ="/stylesheets/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+  body
+    include layout
+    div.form
+      div.ins
+        h1 DisGeVar
+        p A place to find Diseases, Genes and their Associations. Search here..
+        form(action="/home/sr" method= get)
+          input(type="text" id="id" placeholder="Enter an Identifier" name="id")
+          br
+          input(type="radio" value="diseases" checked="checked" name="type")
+          |Disease
+          input(type="radio" value="genes" name="type")
+          |Gene
+          input(type="radio" value="variants" name="type")
+          |Variant
+          br
+          br
+    div.homeMessage
+      div.dishome
+        h1 Diseases
+        img(src="https://media.giphy.com/media/OVzuE3mW5hAwE/giphy.gif" id="bird")
+        p.
+          A disease is a particular abnormal condition that negatively affects the structure or function of all or part of an organism, and that is not due to any immediate external injury.
+          Diseases are often known to be medical conditions that are associated with specific symptoms and signs.[1] A disease may be caused by external factors such as pathogens or by internal dysfunctions.
+          For example, internal dysfunctions of the immune system can produce a variety of different diseases, including various forms of immunodeficiency, hypersensitivity, allergies and autoimmune disorders.
+
+      div.genehome
+        br
+        h1 Genes
+        div.image
+          img(src="https://cdn.dribbble.com/users/5931/screenshots/3494784/dna.gif")
+        p.
+          A gene is the basic physical and functional unit of heredity. Genes are made up of DNA. Some genes act as instructions to make molecules called proteins. However, many genes do not code for proteins.
+          In humans, genes vary in size from a few hundred DNA bases to more than 2 million bases. The Human Genome Project estimated that humans have between 20,000 and 25,000 genes
+          Every person has two copies of each gene, one inherited from each parent. Most genes are the same in all people, but a small number of genes (less than 1 percent of the total) are slightly different between people.
+          Alleles are forms of the same gene with small differences in their sequence of DNA bases. These small differences contribute to each person’s unique physical features.
+
+      div.genedishome
+        br
+        h1 Genes-Diseases
+        img(src="https://bladdercancer.net/wp-content/uploads/2017/11/723.gif")
+        p.
+            Aberrations in certain genes have been observed to either predispose individuals to disease or be directly responsible for the development of a disease phenotype, as in the
+            case of Huntington’s disease 1 and sickle cell disease 2. Deciphering the link between genes and diseases is an open problem in biomedical sciences, but it presents an opportunity to better understand
+            disease aetiology, thereby allowing for the design and development of better mitigation strategies.
+            Note, here we are describing only the links or associations between genes and disease rather than suggesting causality, as the issue of causality is still under debate.
+            Experimental methods for gene–disease association, such as linkage studies 3, genome-wide association studies (GWAS) 4, and RNA interference screens 5, are expensive and time consuming to run.
+    div.footer
+      p Created by Katerina Papapostolou and Dimitra Fouska
+
+
+
+
+

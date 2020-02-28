@@ -1,0 +1,17 @@
+html
+    title Disgenet Login
+    link(rel="stylesheet" href ="/stylesheets/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        h1.nf Welcome to DisGeVar!
+        p Sign in with yout username or password:
+        div.login-form
+            form(action="/signin" method="post")
+                input(type="text" name="username" placeholder="Username" required)
+                input(type="password" name="password" placeholder="Password" required=)
+                input(type="submit")
+        p Or login as #[a(href="/home") Anonymous]
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska
+

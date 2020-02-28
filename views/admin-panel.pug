@@ -1,0 +1,157 @@
+html
+    head
+    title "Admin Panel"
+    link(rel="stylesheet" href ="/stylesheets/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        p.nf
+        if message != null
+            p #{message}
+        div.formgroup
+            h1 disease
+            div.admin-form1
+                form(action="/diseases/" method="post")
+                    input(type="text" name="DName" placeholder="Disease Name")
+                    input(type="text" name="UMLSCUI" placeholder="UMLSCUI" required)
+                    input(type="text" name="MeSH" placeholder="MeSH")
+                    input(type="text" name="SemanticType" placeholder="Semantic Type")
+                    input(type="text" name="PhenAbn" placeholder="Phenotype Abnormality")
+                    input(type="text" name="DType" placeholder="Disease Type")
+                    input(type="text" name="NGenes" placeholder="Number Of Genes")
+                    input(type="text" name="NSNPs" placeholder="Number Of SNPs")
+                    input(type="submit" value = "Create")
+            div.admin-form2
+                form(action="/diseases/upd" method="post")
+                    input(type="text" name="DName" placeholder="Disease Name")
+                    input(type="text" name="UMLSCUI" placeholder="UMLSCUI" required)
+                    input(type="text" name="MeSH" placeholder="MeSH")
+                    input(type="text" name="SemanticType" placeholder="Semantic Type")
+                    input(type="text" name="PhenAbn" placeholder="Phenotype Abnormality")
+                    input(type="text" name="DType" placeholder="Disease Type")
+                    input(type="text" name="NGenes" placeholder="Number Of Genes")
+                    input(type="text" name="NSNPs" placeholder="Number Of SNPs")
+                    input(type="submit" value= "Update")
+            div.admin-form3
+                form(action="/diseases/del" method="post")
+                    input(type="text" name="UMLSCUI" placeholder="UMLSCUI" required)
+                    input(type="submit" value="Delete")
+        div.formgroup
+            h1 gene
+            div.admin-form1
+                form(action="/genes/" method="post")
+                    input(type="text" name="GeneSymbol" placeholder="Gene Symbol" required)
+                    input(type="text" name="FullName" placeholder="Full Name")
+                    input(type="text" name="EntrezIdentifier" placeholder="Entrez Identifier")
+                    input(type="text" name="UniprotAccession" placeholder="Uniprot Accession")
+                    input(type="text" name="DPI" placeholder="DPI")
+                    input(type="text" name="DSI" placeholder="DSI")
+                    input(type="text" name="pLI" placeholder="pLI")
+                    input(type="text" name="NDiseases" placeholder="Number of Diseases")
+                    input(type="submit" value="Create")
+            div.admin-form2
+                form(action="/genes/upd" method="post")
+                    input(type="text" name="GeneSymbol" placeholder="Gene Symbol" required)
+                    input(type="text" name="FullName" placeholder="Full Name")
+                    input(type="text" name="EntrezIdentifier" placeholder="Entrez Identifier")
+                    input(type="text" name="UniprotAccession" placeholder="Uniprot Accession")
+                    input(type="text" name="DPI" placeholder="DPI")
+                    input(type="text" name="DSI" placeholder="DSI")
+                    input(type="text" name="pLI" placeholder="pLI")
+                    input(type="text" name="NDiseases" placeholder="Number of Diseases")
+                    input(type="submit" value = "Update")
+            div.admin-form3
+                form(action="/genes/del" method="post")
+                    input(type="text" name="GeneSymbol" placeholder="Gene Symbol" required)
+                    input(type="submit" value="Delete")
+        div.formgroup
+            h1 variant
+            div.admin-form1
+                form(action="/variants/" method="post")
+                    input(type="text" name="Gene" placeholder="Gene")
+                    input(type="text" name="SNPIdentifier" placeholder="SNP Identifier" required)
+                    input(type="text" name="Class" placeholder="Class")
+                    input(type="text" name="Chromosome" placeholder="Chromosome")
+                    input(type="text" name="VPosition" placeholder="Variant Position")
+                    input(type="text" name="Consequence" placeholder="Consequence")
+                    input(type="text" name="Alleles" placeholder="Alleles")
+                    input(type="text" name="DPI" placeholder="DPI")
+                    input(type="text" name="DSI" placeholder="DSI")
+                    input(type="submit" value="Create")
+            div.admin-form2
+                form(action="/variants/upd" method="post")
+                    input(type="text" name="Gene" placeholder="Gene")
+                    input(type="text" name="SNPIdentifier" placeholder="SNP Identifier" required)
+                    input(type="text" name="Class" placeholder="Class")
+                    input(type="text" name="Chromosome" placeholder="Chromosome")
+                    input(type="text" name="VPosition" placeholder="Variant Position")
+                    input(type="text" name="Consequence" placeholder="Consequence")
+                    input(type="text" name="Alleles" placeholder="Alleles")
+                    input(type="text" name="DPI" placeholder="DPI")
+                    input(type="text" name="DSI" placeholder="DSI")
+                    input(type="submit" value="Update")
+            div.admin-form3
+                form(action="/variants/del" method="post")
+                    input(type="text" name="SNPIdentifier" placeholder="SNP Identifier" required)
+                    input(type="submit" value="Delete")
+        div.formgroup
+            h1 gene-disease association
+            div.admin-form1
+                form(action="/genedisassoc/" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Gene" placeholder="Gene" required)
+                    input(type="text" name="NSNPs" placeholder="number of SNPS")
+                    input(type="text" name="NPMIDs" placeholder="Number of PMIDS")
+                    input(type="text" name="Score" placeholder="Score")
+                    input(type="text" name="EL" placeholder="EL")
+                    input(type="text" name="EI" placeholder="EI")
+                    input(type="text" name="FirstRef" placeholder="First Reference")
+                    input(type="text" name="LastRef" placeholder="Last Reference")
+                    input(type="submit" value="Create")
+            div.admin-form2
+                form(action="/genedisassoc/upd" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Gene" placeholder="Gene" required)
+                    input(type="text" name="NSNPs" placeholder="number of SNPS")
+                    input(type="text" name="NPMIDs" placeholder="Number of PMIDS")
+                    input(type="text" name="Score" placeholder="Score")
+                    input(type="text" name="EL" placeholder="EL")
+                    input(type="text" name="EI" placeholder="EI")
+                    input(type="text" name="FirstRef" placeholder="First Reference")
+                    input(type="text" name="LastRef" placeholder="Last Reference")
+                    input(type="submit" value="Update")
+            div.admin-form3
+                form(action="/genedisassoc/del" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Gene" placeholder="Gene" required)
+                    input(type="submit" value="Delete")
+        div.formgroup
+            h1 variant-disease association
+            div.admin-form1
+                form(action="/vardisassoc/" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Variant" placeholder="Variant" required)
+                    input(type="text" name="NPMIDs" placeholder="Number of PMIDS")
+                    input(type="text" name="Score" placeholder="Score")
+                    input(type="text" name="EI" placeholder="EI" )
+                    input(type="text" name="FirstRef" placeholder="First Reference")
+                    input(type="text" name="LastRef" placeholder="Last Reference")
+                    input(type="submit" value="Create")
+            div.admin-form2
+                form(action="/vardisassoc/upd" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Variant" placeholder="Variant" required)
+                    input(type="text" name="NPMIDs" placeholder="Number of PMIDS")
+                    input(type="text" name="Score" placeholder="Score")
+                    input(type="text" name="EI" placeholder="EI" )
+                    input(type="text" name="FirstRef" placeholder="First Reference")
+                    input(type="text" name="LastRef" placeholder="Last Reference")
+                    input(type="submit" value="Update")
+            div.admin-form3
+                form(action="/vardisassoc/del" method="post")
+                    input(type="text" name="Disease" placeholder="Disease" required)
+                    input(type="text" name="Variant" placeholder="Variant" required)
+                    input(type="submit" value="Delete")
+            div.footer
+                p Created by Katerina Papapostolou and Dimitra Fouska

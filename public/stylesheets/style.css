@@ -1,0 +1,415 @@
+
+body {
+  /*background-color: #f0f5f9;*/
+  background-color: white;
+  text-align: center;
+  font-family: 'Muli', serif;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  width: 10%;
+}
+a {
+  color: #ff2e63;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 3em;
+  color: black;
+}
+h2{
+  font-size: medium;
+  color: black;
+}
+
+input[type=text], label {
+  margin-bottom: 8px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  background-color: white;
+  height: 35px;
+}
+
+.footer p{
+  margin-top: 0;
+}
+
+.nav{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+.nav a{
+  display: inline-block;
+  padding: 14px 16px;
+  color: #252a34;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  float: left;
+}
+.rightnav{
+  float:right;
+}
+.nav a:hover {
+  color: black;
+}
+
+
+.form{
+  display: block;
+  background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  left: 0;
+  color: white;
+  margin-top: 50px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+
+}
+
+.form form{
+  position: absolute;
+  width: 50%;
+  right: 25%;
+  font-size: 20px;
+  padding-top: 115px;
+}
+
+.ins{
+  position: relative;
+  padding-top: 120px;
+  width: 100%;
+}
+
+.ins h1{
+  position: absolute;
+  display: block;
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 700;
+  left: 26%;
+  color: white;
+  padding-top: 1px;
+  margin-bottom: 10px;
+}
+
+.ins p{
+  position: absolute;
+  left: 26%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+.homeMessage{
+  position: absolute;
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.dishome{
+  margin-top: 70px;
+  text-align: left;
+}
+.dishome h1{
+  float: left;
+  margin-left: 16%;
+  margin-bottom: 0px;
+}
+.dishome p{
+  width: 20%;
+  float: left;
+  margin-left: 16%;
+  margin-top: 0;
+}
+
+.dishome img{
+  width: 30%;
+  float: right;
+  margin-right: 16%;
+  margin-top: 100px;
+  height: 300px;
+}
+
+.genehome{
+  margin-top: 500px;
+  text-align: left;
+  padding-top: 100px
+}
+.genehome h1{
+  float: left;
+  margin-left: 16%;
+  margin-bottom: 0;
+}
+.genehome p{
+  width: 20%;
+  float: left;
+  margin-left: 16%;
+  margin-top: 0;
+}
+
+.genehome img{
+  width: 30%;
+  float: right;
+  margin-right: 16%;
+  margin-top: 100px;
+  height: 300px;
+}
+
+.genedishome{
+  margin-top: 510px;
+  text-align: left;
+  padding-top: 100px;
+}
+.genedishome h1{
+  float: left;
+  margin-left: 16%;
+  margin-bottom: 0;
+}
+
+.genedishome p{
+  width: 20%;
+  float: left;
+  margin-left: 16%;
+  margin-top: 0;
+}
+
+.genedishome img{
+  width: 30%;
+  float: right;
+  margin-right: 16%;
+  margin-top: 100px;
+  height: 300px;
+}
+
+h1 img{
+  width: 15%;
+  padding: 20px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+button{
+  padding: 15px;
+  background-color: black;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  width: 40%;
+  color: white;
+}
+
+input[type=radio]{
+  width: 10%;
+  text-align: left;
+}
+
+table{
+  margin-top:100px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+}
+th, td {
+  height: 50px;
+  width: 9%;
+  text-align: center;
+  padding: 15px;
+}
+th{
+  font-size: 20px;
+  border-bottom: 10px solid;
+  border-bottom-color: #08d9d6;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.login-form h1 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.form-group{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.admin-form1 {
+  display: inline-flex;
+  width: 30%;
+  font-family: Tahoma, Geneva, sans-serif;
+  float: left;
+}
+
+.admin-form2 {
+  width: 30%;
+  display: inline-flex;
+  font-family: Tahoma, Geneva, sans-serif;
+  align-content: center;
+}
+
+.admin-form3 {
+  display: inline-flex;
+  width: 30%;
+  font-family: Tahoma, Geneva, sans-serif;
+  float: right;
+}
+.admin-form1 p, .admin-form2 p, .admin-form3 p {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+
+.admin-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
+.admin-form1 input[type="submit"],  .admin-form2 input[type="submit"],.admin-form3 input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #535b63;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nf{
+  margin-top: 50px;
+}
+
+.oneTitle{
+  margin-top: 50px;
+  border-bottom-color: #08d9d6;
+  border-bottom-width: 40px;
+}
+
+.displayOne{
+  font-size: 20px;
+}
+.results{
+  position: absolute;
+  margin-top: 100px;
+  color: #252a34;
+  text-align: left;
+  margin-bottom: 55px;;
+}
+.results p{
+  float: left;
+  margin-left: 16%;
+  margin-top: 50px;
+}
+
+.Title{
+  float: left;
+  margin-left: 0%;
+  margin-bottom: 0px;
+  color: #08d9d6;
+}
+
+.results img{
+  width: 50%;
+  float: right;
+  margin-right: -10%;
+  margin-top: 250px;
+}
+
+.buttons a{
+  width: 30%;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px;
+  border:1px solid;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-1{
+  border-color: #ff2e63;
+  color: #ff2e63;
+  display: block;
+  width: 100%;
+  margin: 15px;
+}
+
+.btn-1:hover{
+  background-color: #ff2e63;
+  color: white;
+}

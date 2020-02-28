@@ -1,0 +1,25 @@
+html
+    head
+        title = "List of Variants"
+        link(rel="stylesheet" href ="/stylesheets/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        if(message==null&&result!=null)
+            div.results
+                p.nf
+                h1.Title Variants found:
+                img(src="https://freerangestock.com/sample/132384/biomedical-research--scientific-research--biotech.jpg")
+                p
+                    for item in result
+                        a(href="/variants/"+item.SNPIdentifier) #{item.SNPIdentifier}
+                        br
+                        br
+                    |Click on their names to get more information
+        else
+            h2.nf No variants were found! Try again
+            br
+            img(src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036")
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska

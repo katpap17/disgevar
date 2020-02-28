@@ -1,0 +1,36 @@
+html
+    head
+        title = "Variant"
+        link(rel="stylesheet" href ="/stylesheets/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        p.nf
+        h1.oneTitle
+        p.displayOne.
+            Gene: #[a(href="/genes/"+result.Gene) #{result.Gene}]
+            #[br]
+            SNPIdentifier: #{result.SNPIdentifier}
+            #[br]
+            Class: #{result.Class}
+            #[br]
+            Chromosome: #{result.Chromosome}
+            #[br]
+            VPosition: #{result.VPosition}
+            #[br]
+            Consequence: #{result.Consequence}
+            #[br]
+            Alleles: #{result.Alleles}
+            #[br]
+            AFexome: #{result.AFexome}
+            #[br]
+            AFgenome: #{result.AFgenome}
+            #[br]
+            DPI: #{result.DPI}
+            #[br]
+            DSI: #{result.DSI}
+        div.buttons
+            a(href="/vardisassoc/a/"+result.SNPIdentifier class="btn-1") View Variant-Disease Associations for this Variant
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska

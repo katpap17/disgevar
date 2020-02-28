@@ -1,0 +1,32 @@
+html
+    head
+        title = "Gene"
+        link(rel="stylesheet" href ="/stylesheets/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        p.nf
+        h1.oneTitle Gene
+        p.displayOne.
+            GeneSymbol: #{result.GeneSymbol}
+            #[br]
+            FullName: #{result.FullName}
+            #[br]
+            EntrezIdentifier: #{result.EntrezIdentifier}
+            #[br]
+            UniprotAccession: #{result.UniprotAccession}
+            #[br]
+            DPI: #{result.DPI}
+            #[br]
+            DSI: #{result.DSI}
+            #[br]
+            pLI: #{result.pLI}
+            #[br]
+            NDiseases: #{result.NDiseases}
+            #[br]
+        div.buttons
+            a(href="/variants/a/"+result.GeneSymbol class="btn-1") View Variants for this Gene
+            a(href="/genedisassoc/a/"+result.GeneSymbol class="btn-1") View Gene-Disease Associations for this Gene
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska

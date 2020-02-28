@@ -1,0 +1,32 @@
+html
+    head
+        title = "Disease"
+        link(rel="stylesheet" href ="/stylesheets/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+    body
+        include layout
+        p.nf
+        h1.oneTitle Disease
+        p.displayOne.
+            UMLSCUI: #{result.UMLSCUI}
+            #[br]
+            Disease Name: #{result.DName}
+            #[br]
+            MeSH: #{result.MeSH}
+            #[br]
+            SemanticType: #{result.SemanticType}
+            #[br]
+            PhenAbn: #{result.PhenAbn}
+            #[br]
+            DType: #{result.DType}
+            #[br]
+            NGenes: #{result.NGenes}
+            #[br]
+            NSnps: #{result.NSnps}
+        div.buttons
+            a(href="/genedisassoc/"+result.UMLSCUI class="btn-1") View Gene-Disease Associations For This Disease
+            br
+            a(href="/vardisassoc/"+result.UMLSCUI class="btn-1") View Variant-Disease Associations for this Disease
+        div.footer
+            p Created by Katerina Papapostolou and Dimitra Fouska

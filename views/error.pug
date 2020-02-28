@@ -1,0 +1,13 @@
+html
+  head
+    link(rel="stylesheet" href ="/stylesheets/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet")
+
+  body
+    include layout
+    p.nf
+    h1= message
+    h2= error.status
+    pre #{error.stack}
+    div.footer
+      p Created by Katerina Papapostolou and Dimitra Fouska
