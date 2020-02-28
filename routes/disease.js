@@ -1,137 +1,118 @@
-var Express = require('express');
-var express = Express.Router();
-const bodyParser = require('body-parser');
-const Variant = require('../models/Variant');
-express.use(bodyParser.json());
-express.use(bodyParser.urlencoded({extended: true}));
-const {Op} = require('sequelize');
+    var Express = require('express');
+    var express = Express.Router();
+    const bodyParser = require('body-parser');
+    const Disease = require('../models/Disease');
+    express.use(bodyParser.json());
+    express.use(bodyParser.urlencoded({extended: true}));
+    const {Op} = require("sequelize");
 
-//INSERT INTO Variant VALUES(?????)
-express.post('/',  (req, res) => {
-    for(let i in req.body){
-        if(req.body[i] === ''){
-            req.body[i]=null;
+    //INSERT INTO DISEASE VALUES(?????)
+    express.post('/', (req, res) => {
+     const dis=0;
+        for(let i in req.body){
+            if(req.body[i] === ''){
+                req.body[i]=null;
+            }
         }
-    }
-    Variant.create({
-        Gene: req.body.Gene,
-        SNPIdentifier: req.body.SNPIdentifier,
-        Class: req.body.Class,
-        Chromosome: req.body.Chromosome,
-        VPosition: req.body.VPosition,
-        Consequence: req.body.Consequence,
-        Alleles: req.body.Alleles,
-        AFexome: req.body.AFexome,
-        AFgenome: req.body.AFgenome,
-        DPI: req.body.DPI,
-        DSI: req.body.DSI
-    })
-        .then(function(data) {
-            res.render('admin-panel', {message: "Variant was updated succesfully!"});
+     console.log(req.body);
+     Disease.create({
+         DName: req.body.DName,
+         UMLSCUI: req.body.UMLSCUI,
+         MeSH: req.body.MeSH,
+         SemanticType: req.body.SemanticType,
+         PhenAbn: req.body.PhenAbn,
+         DType: req.body.DType,
+         NGenes: req.body.NGenes,
+         NSNPs: req.body.NSNPs
+     })
+        .then(function (data) {
+            // you can now access the newly created user
+            res.render('admin-panel', {message: "Disease created succesfully!"})
         })
         .catch(err =>
         {
             // print the error details
-            res.render('admin-panel', {
-                message:
-                    err.message || "erroooooooor"
-            });
+            res.render('admin-panel', {message: err})
+        });
         });
 
-});
-
-//SELECT * FROM Variant
+//SELECT * FROM DISEASE
 express.get('/', (req, res) => {
-    Variant.findAll().then(data => res.render('variants', {result: data}))
-        .catch((error) => res.render('error', {error: error, message: 'Oops! An error occurred.'}))
+    Disease.findAll().then(diseases => res.render('diseases', {
+        result: diseases})).catch((error) => res.render('error', {error: error, message: 'Opps! An error occured.'}))
 });
 
-//SELECT * FROM Variant WHERE SNPIdentifier = ?
-express.get('/:SNPIdentifier?', (req, res) => {
-    Variant.findOne({where: {SNPIdentifier: req.params.SNPIdentifier}}).then(data => res.render('variant', {result: data.toJSON()}))
-        .catch((error) => res.render('error', {error: error, message: 'Oops! An error occurred.'}))
-});
-
-//SELECT * FROM Variant WHERE Gene = ?
-express.get('/a/:GeneSymbol?', (req, res) => {
-    Variant.findAll({where: {Gene: req.params.GeneSymbol}}).then(data => {
-        if(data.length!=0){
-            res.render('variants', {result: data})
-        }
-        else{
-            res.render('variants', {message: "hjds"})
-        }})
-        .catch((error) => res.render('error', {error: error, message: 'Oops! An error occurred.'}))
-});
-
-//Select * from gene where GeneSymbol LIKE....
-express.get('/search/:SNPIdentifier?', (req, res) => {
-    Variant.findAll({
+//Select * from disease where DName LIKE....
+express.get('/search/:DName?', (req, res) => {
+    Disease.findAll({
         where: {
-            SNPIdentifier: {
-                [Op.like] : '%'+req.params.SNPIdentifier+'%'
+            DName: {
+                [Op.like] : '%'+req.params.DName+'%'
             }
         }
     })
-        .then(data => {
-            if(data.length!=0){
-                res.render('variants', {
-                    result: data})
-            }
+        .then(diseases => {
+            if(diseases.length!=0){
+            res.render('diseases', {
+                result: diseases})}
             else{
-                res.render('variants', {message: "no variants were found"})
+                res.render('diseases', {message: "No disease was found"})
             }
         })
-        .catch((error) => res.render('variants', {message: "no variants were found"}));
-
+        .catch((error) => res.render('diseases', {message: "No disease was found"}))
 });
 
 
 
+//SELECT * FROM DISEASE WHERE UMLSCUI = ?
+express.get('/:UMLSCUI?', (req, res) => {
+    Disease.findOne({where: {UMLSCUI: req.params.UMLSCUI}}).then(diseases => res.render('disease', {
+        result: diseases.toJSON()
+    })).catch((error) => res.render('error', {error: error, message: 'Oops! An error occurred.'}))
+});
 
 //DELETE AN ENTRY
-express.post('/del', (req, res) =>{
-    Variant.destroy({where:{SNPIdentifier: req.body.SNPIdentifier}}) .then(num => {
-        if (num == 1) {
-            res.render('admin-panel', {
-                message: "Variant was deleted successfully!"
-            });
-        } else {
-            res.render('admin-panel', {
-                message: `Cannot delete Variant with SNPIdentifier=${req.params.SNPIdentifier}. Maybe Variant was not found!`
-            });
-        }
-    })
+express.post('/del',  (req, res) => {
+    Disease.destroy({where: {UMLSCUI: req.body.UMLSCUI}})
+        .then(num => {
+            if (num == 1) {
+                res.render('admin-panel', {
+                    message: "Disease was deleted successfully!"
+                });
+            } else {
+                res.render('admin-panel', {
+                    message: `Cannot delete Disease with UMLSCUI=${req.params.UMLSCUI}. Maybe Disease was not found!`
+                });
+            }
+        })
         .catch(err => {
             res.render('admin-panel', {
-                message: "Could not delete Variant"
+                message: "Could not delete Disease with UMLSCUI=" + req.params.UMLSCUI
             });
         });
 });
 
-
-
 //UPDATE AN ENTRY
-express.post('/upd', (req, res) =>{
+express.post('/upd', (req, res) => {
     for(let i in req.body){
         if(req.body[i] === ''){
             delete req.body[i];
         }
     }
-    Variant.update(req.body, {where: {SNPIdentifier: req.body.SNPIdentifier}}).then(num => {
+    Disease.update(req.body, {where: {UMLSCUI: req.body.UMLSCUI}}).then(num => {
         if (num == 1) {
             res.render('admin-panel', {
-                message: "Variant was updated successfully."
+                message: "Disease was updated successfully."
             });
         } else {
             res.render('admin-panel', {
-                message: `Cannot update Variant with SNPIdentifier=${req.params.SNPIdentifier}. Maybe SNPIdentifier was not found or req.body is empty!`
+                message: `Cannot update Disease with UMLSCUI=${req.body.UMLSCUI}. Maybe UMLSCUI was not found or req.body is empty!`
             });
         }
     })
         .catch(err => {
-            res.render('admin-panel',{
-                message: "Error updating Variant"
+            res.render('admin-panel', {
+                message: "Error updating Disease with UMLSCUI=" + req.body.UMLSCUI+ req.body.MeSH
             });
         });
 });
