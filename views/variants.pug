@@ -7,10 +7,10 @@ html
     body
         include layout
         if(message==null&&result!=null)
-            div.results
+            div.resultsv
                 p.nf
-                h1.Title Variants found:
-                img(src="https://freerangestock.com/sample/132384/biomedical-research--scientific-research--biotech.jpg")
+                h1.Title Variants
+                img(src="https://i.pinimg.com/originals/c3/1c/26/c31c2695954d131e5edd11d5592ff183.jpg" class="variants")
                 p
                     for item in result
                         a(href="/variants/"+item.SNPIdentifier) #{item.SNPIdentifier}

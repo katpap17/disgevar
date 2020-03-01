@@ -7,14 +7,13 @@ html
     body
         include layout
         if(message==null)
-            div.results
+            div.resultsd
                 p.nf
-                h1.Title Diseases found:
-                img(src="https://freerangestock.com/sample/132384/biomedical-research--scientific-research--biotech.jpg")
+                h1.Title Diseases
+                img(src="https://www.knowablemagazine.org/sites/default/files/styles/1600_600/public/articles/banner/2017-11/norovirus_low_web.jpg?itok=fXMr2z2G" class="diseases")
                 p
                     for item in result
                         a(href="/diseases/"+item.UMLSCUI) #{item.UMLSCUI} #{item.DName}
-                        br
                         br
                         br
                     |Click on their names to get more information

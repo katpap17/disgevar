@@ -7,10 +7,10 @@ html
     body
         include layout
         if(message==null)
-            div.results
+            div.resultsg
                 p.nf
-                h1.Title Genes found:
-                img(src="https://freerangestock.com/sample/132384/biomedical-research--scientific-research--biotech.jpg")
+                h1.Title Genes
+                img(src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/double-helix-erzebet-s.jpg")
                 p
                     for item in result
                         a(href="/genes/"+item.GeneSymbol) #{item.GeneSymbol}
@@ -20,6 +20,6 @@ html
         else
             h2.nf No genes were found! Try again
             br
-            img(src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036")
+            img(src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036" class="genes")
         div.footer
             p Created by Katerina Papapostolou and Dimitra Fouska

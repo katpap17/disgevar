@@ -13,7 +13,7 @@ img{
   width: 10%;
 }
 a {
-  color: #ff2e63;
+  color: #14ffec;
   text-decoration: none;
   font-size: 18px;
 }
@@ -72,7 +72,7 @@ input[type=text], label {
   float:right;
 }
 .nav a:hover {
-  color: #08d9d6;
+  color: 14ffec;
 }
 
 
@@ -265,7 +265,7 @@ th, td {
 th{
   font-size: 20px;
   border-bottom: 10px solid;
-  border-bottom-color: #08d9d6;
+  border-bottom-color: #0d7377;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -355,7 +355,7 @@ th{
 
 .oneTitle{
   margin-top: 50px;
-  border-bottom-color: #08d9d6;
+  color: #0d7377;
   border-bottom-width: 40px;
 }
 
@@ -374,31 +374,106 @@ th{
   width: 5%;
 }
 
-.results{
+.resultsd{
   position: absolute;
   margin-top: 100px;
   color: #252a34;
-  text-align: left;
+  text-align: center;
   margin-bottom: 55px;;
 }
-.results p{
+.resultsd p{
   float: left;
   margin-left: 16%;
   margin-top: 50px;
+}
+.resultsd a{
+  font-size: 20px;
+  color: #535b63;
+  font-weight: 800;
+}
+
+.resultsg{
+  position: absolute;
+  margin-top: 100px;
+  color: #252a34;
+  text-align: center;
+  margin-bottom: 55px;;
+}
+.resultsg p{
+  float: left;
+  margin-left: 16%;
+  margin-top: 50px;
+}
+.resultsg a{
+  font-size: 20px;
+  color: #535b63;
+  font-weight: 800;
+}
+
+.resultsv{
+  position: absolute;
+  margin-top: 100px;
+  color: #252a34;
+  text-align: center;
+  margin-bottom: 55px;;
+}
+.resultsv p{
+  float: left;
+  margin-left: 16%;
+  margin-top: 50px;
+}
+.resultsv a{
+  font-size: 20px;
+  color: #535b63;
+  font-weight: 800;
 }
 
 .Title{
   float: left;
   margin-left: 0%;
   margin-bottom: 0px;
-  color: #08d9d6;
+
+
+/* if we can clip, do it */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+/* what will show through the text
+    ~ or ~
+   what will be the background of that element */
+  background-image: url("https://images.unsplash.com/photo-1532423622396-10a3f979251a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: 200px;
+  font-weight: 800;
+  font-size: 100px;
+/* fallback text color
+    ~ or ~
+   the actual color of text, so it better work on the background */
+  text-align: center;
+  color: #0d7377;
 }
 
-.results img{
+.resultsd img{
+  width: 45%;
+  float: right;
+  margin-top: 250px;
+  height: 600px;
+  margin-right: 10%;
+}
+
+.resultsg img{
+  width: 55%;
+  float: right;
+  margin-top: 250px;
+  height: 600px;
+  margin-right: -35%;
+}
+
+.resultsv img{
   width: 50%;
   float: right;
-  margin-right: -10%;
-  margin-top: 250px;
+  margin-top: 0;
+  height: 900px;
+  margin-right: 0;
 }
 
 .buttons a{
@@ -414,14 +489,14 @@ th{
 }
 
 .btn-1{
-  border-color: #ff2e63;
-  color: #ff2e63;
+  border-color: #14ffec;
+  color: #14ffec;
   display: block;
   width: 100%;
   margin: 15px;
 }
 
 .btn-1:hover{
-  background-color: #ff2e63;
+  background-color: #14ffec;
   color: white;
 }

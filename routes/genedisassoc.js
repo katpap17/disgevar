@@ -45,12 +45,26 @@ express.get('/', (req, res) => {
 
 //SELECT * FROM GeneDisAssoc WHERE Disease = ?
 express.get('/:Disease?', (req, res) => {
-    GeneDisAssoc.findAll({where: {Disease: req.params.Disease}}).then(data => res.render('genedisassoc', {result: data}))
+    GeneDisAssoc.findAll({where: {Disease: req.params.Disease}}).then(data =>{
+        if(data.length!=0){
+            res.render('genedisassoc', {result: data})
+        }
+        else{
+            res.render('genedisassoc', {message: "lkdjas"})
+        }
+})
 });
 
 //SELECT * FROM GeneDisAssoc WHERE Gene = ?
 express.get('/a/:Gene?', (req, res) => {
-    GeneDisAssoc.findAll({where: {Gene: req.params.Gene}}).then(data => res.render('genedisassoc', {result: data}))
+    GeneDisAssoc.findAll({where: {Gene: req.params.Gene}}).then(data => {
+        if(data.length!=0){
+            res.render('genedisassoc', {result: data})
+        }
+        else{
+            res.render('genedisassoc', {message: "lkdjas"})
+        }
+    })
 });
 
 //DELETE AN ENTRY

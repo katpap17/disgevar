@@ -6,26 +6,32 @@ html
 
     body
         include layout
-        h1.nf Variant-Disease Associations
-        table.table
-            tr
-                th Variant
-                th Disease
-                th NPMIDs
-                th Score
-                th EI
-                th First Reference
-                th Last Reference
-            t.body
-                for item in result
-                    tr
-                        td #[a(href="/variants/"+item.Variant) #{item.Variant}]
-                        td #[a(href="/diseases/"+item.Disease) #{item.Disease}]
-                        td #{item.NPMIDs}
-                        td #{item.Score}
-                        td #{item.EI}
-                        td #{item.FirstRef}
-                        td #{item.LastRef}
+
+        if(message==null)
+            h1.nf Variant-Disease Associations
+            table.table
+                tr
+                    th Variant
+                    th Disease
+                    th NPMIDs
+                    th Score
+                    th EI
+                    th First Reference
+                    th Last Reference
+                t.body
+                    for item in result
+                        tr
+                            td #[a(href="/variants/"+item.Variant) #{item.Variant}]
+                            td #[a(href="/diseases/"+item.Disease) #{item.Disease}]
+                            td #{item.NPMIDs}
+                            td #{item.Score}
+                            td #{item.EI}
+                            td #{item.FirstRef}
+                            td #{item.LastRef}
+        else
+            h1.nf No Variant-Disease Associations were found! Try again
+            br
+            img(src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036")
         div.footer
             p Created by Katerina Papapostolou and Dimitra Fouska
                 
