@@ -23,7 +23,7 @@
          PhenAbn: req.body.PhenAbn,
          DType: req.body.DType,
          NGenes: req.body.NGenes,
-         NSNPs: req.body.NSNPs
+         NSnps: req.body.NSnps
      })
         .then(function (data) {
             // you can now access the newly created user
