@@ -26,7 +26,7 @@
          NSnps: req.body.NSnps
      })
         .then(function (data) {
-            // you can now access the newly created user
+
             res.render('admin-panel', {message: "Disease created succesfully!"})
         })
         .catch(err =>

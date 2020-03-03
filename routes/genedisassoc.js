@@ -25,7 +25,7 @@ express.post('/',  (req, res) => {
         LastRef: req.body.LastRef
     })
         .then(function (data) {
-            // you can now access the newly created user
+
             res.render('admin-panel', {message: 'Gene-Disease Association was created succesfully!'});
         })
         .catch(err =>

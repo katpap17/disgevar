@@ -64,7 +64,7 @@ express.get('/a/:GeneSymbol?', (req, res) => {
         .catch((error) => res.render('error', {error: error, message: 'Oops! An error occurred.'}))
 });
 
-//Select * from gene where GeneSymbol LIKE....
+//Select * from variant where SNPIdentifier LIKE....
 express.get('/search/:SNPIdentifier?', (req, res) => {
     Variant.findAll({
         where: {
